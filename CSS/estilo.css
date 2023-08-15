@@ -1,32 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
 
-@media (max-width: 768px) {
-
-header {
-    padding: 10px;
-}
-
-nav {
-    padding: 5px 0;
-}
-
-.menu {
-    padding: 5px 10px;
-}
-
-main {
-    padding: 20px;
-}
-
-.home {
-    font-size: 18px;
-}
-
-footer {
-    padding: 5px 0;
-}
-}
-
 * {
     margin: 0;
     padding: 0;
