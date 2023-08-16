@@ -16,29 +16,44 @@ body {
     height: 40px;
 }
 
+
 .links {
     list-style-type: none;
     background-color: rgba(136, 5, 146, 0.942);
     padding: 1;
     height: 40px;
-
-    display: flex;  
+  
+    display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-
     justify-content: center;
     align-items: center;
     align-content: center;
     gap: 2rem;
-}
-
-.menu {
+  }
+  
+  .menu {
     color: white;
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
-    font: 1rem;
+    font-size: 1rem; /* Cambiado "font" por "font-size" para establecer el tamaño de fuente */
     text-decoration: none;
-}
+  }
+  
+  /* Media Query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .links {
+      height: auto; /* Cambiar la altura a automática */
+      padding: 0; /* Reducir el relleno */
+      flex-direction: column; /* Cambiar a una disposición de columna */
+      gap: 1rem; /* Reducir el espacio entre elementos */
+    }
+    
+    .menu {
+      text-align: center; /* Centrar el texto en pantallas más pequeñas */
+    }
+  }
+  
 
 footer {
     text-align: center;
