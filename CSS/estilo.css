@@ -10,12 +10,14 @@ body {
     background-color: rgba(222, 180, 225, 0.326);
 }
 
+
+/*Home*/
+
 .logo-home {
     margin-top: 1rem;
     width: 150px;
     height: 40px;
 }
-
 
 .links {
     list-style-type: none;
@@ -36,24 +38,35 @@ body {
     color: white;
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
-    font-size: 1rem; /* Cambiado "font" por "font-size" para establecer el tamaño de fuente */
+    font-size: 1rem;
     text-decoration: none;
   }
   
-  /* Media Query para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .links {
-      height: auto; /* Cambiar la altura a automática */
-      padding: 0; /* Reducir el relleno */
-      flex-direction: column; /* Cambiar a una disposición de columna */
-      gap: 1rem; /* Reducir el espacio entre elementos */
-    }
-    
-    .menu {
-      text-align: center; /* Centrar el texto en pantallas más pequeñas */
-    }
+.menu-icono {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
   }
   
+  .icon-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icono {
+      display: block;
+    }
+    
+    .links {
+      display: none; /
+    }
+  }
 
 footer {
     text-align: center;
@@ -79,6 +92,7 @@ footer {
     background-attachment: fixed;
 }
 
+/*Services*/
 
 .grid {
     box-sizing: border-box;
@@ -160,7 +174,7 @@ footer {
     grid-area: AI;
 }
 
-@media (max-width:992px) /*and (min-width: 500px)*/ {
+@media (max-width:768px) {
 
 .grid {
     grid-template-columns: 1fr 1fr;
@@ -172,18 +186,7 @@ footer {
 }
 }
 
-@media (max-width:570px) {
-    .grid {
-        grid-template-columns:1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "título"
-        "clients1"
-        "cloud"
-        "security"
-        "AI";
-    }
-}
+/*Clients*/
 
 .clients {
     color: black;
@@ -203,6 +206,8 @@ footer {
     height: 100%;
     object-fit: cover;
   }
+
+/*About Us*/
   
 .about-us {
     padding: 5rem;
@@ -240,6 +245,8 @@ footer {
     text-align: center;
 }
 
+/*Contact*/
+
 .contact1 {
     padding: 2rem;
     color:rgb(121, 34, 121);
@@ -251,7 +258,6 @@ footer {
     text-decoration:underline;
 }
 
-
 .texto {
     padding: 1.5rem;
     font-family: 'Raleway', sans-serif;
@@ -261,7 +267,7 @@ footer {
     text-align:center;
 }
   
-  .map-container {
+.texto-mapa {
     width: 100%;
     max-width: 600px; 
     margin: 20px auto;
@@ -276,13 +282,13 @@ footer {
     margin: 0 auto;
   }
   
-  .contact label, .contact input, .contact textarea {
+.contact label, .contact input, .contact textarea {
     display: block;
     margin-bottom: 10px;
     width: 100%;
   }
   
-  .contact button {
+.contact button {
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem;
     font-weight: normal;
@@ -294,7 +300,7 @@ footer {
     cursor: pointer;
   }
   
-  .contact button:hover {
+.contact button:hover {
     background-color: rgba(210, 161, 255, 0.651);
   }
   
