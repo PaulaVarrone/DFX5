@@ -41,32 +41,6 @@ body {
     font-size: 1rem;
     text-decoration: none;
   }
-  
-.menu-icono {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  .icon-bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #333;
-  }
-  
-  @media (max-width: 768px) {
-    .menu-icono {
-      display: block;
-    }
-    
-    .links {
-      display: none; /
-    }
-  }
 
 footer {
     text-align: center;
