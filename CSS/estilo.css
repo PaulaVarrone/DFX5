@@ -19,28 +19,13 @@ body {
     height: 40px;
 }
 
-.links {
+.bg-custom-color {
     list-style-type: none;
     background-color: rgba(136, 5, 146, 0.942);
     padding: 1;
     height: 40px;
-  
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 2rem;
   }
   
-  .menu {
-    color: white;
-    font-weight: 800;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
-  }
 
 footer {
     text-align: center;
@@ -65,6 +50,7 @@ footer {
     background-size:cover;
     background-attachment: fixed;
 }
+
 
 /*Services*/
 
