@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body {
+body header {
     background-color: rgba(222, 180, 225, 0.326);
 }
 
@@ -26,7 +26,6 @@ body {
     height: 40px;
   }
   
-
 footer {
     text-align: center;
     font-family: 'Raleway', sans-serif;
