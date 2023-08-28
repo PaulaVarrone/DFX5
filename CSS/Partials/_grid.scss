@@ -1,0 +1,93 @@
+.grid {
+    box-sizing: border-box;
+    background-color: rgba(222, 180, 225, 0.326);
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+        "título título clients1 cloud"
+        "título título security AI";
+}
+
+.título {
+        padding: 15rem;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+        font-weight: normal;
+        font-style: italic;
+        text-align: center;
+        text-decoration: none;
+        background-image: url("../Img/ss.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        grid-area: título;
+    }
+
+    .clients1 {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        text-decoration: none;
+        grid-area: clients1;
+    }
+
+
+    .imagen {
+            width: 250px;
+            height: auto;
+    }
+
+
+    .cloud {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        text-decoration: none;
+        grid-area: cloud;
+    }
+    
+    .security {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        text-decoration: none;
+        grid-area: security;
+    }
+    
+    .AI {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        text-decoration: none;
+        grid-area: AI;
+    }
+
+
+@media (max-width:768px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "título título"
+        "clients1 cloud"
+        "security AI";
+    }
+    }
