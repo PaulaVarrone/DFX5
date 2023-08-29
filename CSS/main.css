@@ -29,6 +29,10 @@
   padding: 1;
 }
 
+.nav-color-white {
+  color: white;
+}
+
 .home {
   padding: 15rem;
   color: white;
