@@ -13,7 +13,7 @@
   background-color: black;
   color: rgba(210, 161, 255, 0.651);
 }
-* body {
+* .body-bg {
   background-color: rgba(222, 180, 225, 0.326);
 }
 
@@ -27,7 +27,6 @@
   list-style-type: none;
   background-color: rgba(136, 5, 146, 0.942);
   padding: 1;
-  height: 40px;
 }
 
 .home {
