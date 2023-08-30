@@ -1,18 +1,22 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 *::-moz-selection {
   background-color: black;
   color: rgba(210, 161, 255, 0.651);
 }
+
 *::selection {
   background-color: black;
   color: rgba(210, 161, 255, 0.651);
 }
+
 * body {
   background-color: rgba(222, 180, 225, 0.326);
 }
@@ -91,15 +95,15 @@
   gap: 1rem;
 }
 
-.tarjeta {
+.tarjetas .tarjeta {
   flex: 1;
 }
 
-.img {
+.tarjetas .tarjeta .img {
   width: 100%;
 }
 
-.personas {
+.tarjetas .personas {
   text-align: center;
 }
 
@@ -112,8 +116,8 @@
 }
 
 .rotate-scale-up {
-	-webkit-animation: rotate-scale-up 0.65s linear both;
-	        animation: rotate-scale-up 0.65s linear both;
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
 }
 
 /* ----------------------------------------------
@@ -128,32 +132,37 @@
  * animation rotate-scale-up
  * ----------------------------------------
  */
- @-webkit-keyframes rotate-scale-up {
+@-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
+
   50% {
     -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
+
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
+
 @keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
+
   50% {
     -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
+
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
 
@@ -168,7 +177,7 @@
   grid-template-areas: "título título clients1 cloud" "título título security AI";
 }
 
-.título {
+.grid .título {
   padding: 15rem;
   color: hsl(0, 0%, 100%);
   font-family: "Raleway", sans-serif;
@@ -240,6 +249,7 @@
     grid-template-areas: "título título" "clients1 cloud" "security AI";
   }
 }
+
 .clients {
   color: black;
   font-family: "Raleway", sans-serif;
@@ -252,11 +262,12 @@
   gap: 7rem;
   align-items: center;
 }
+
 .clients .carousel-inner {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .contact1 {
@@ -323,4 +334,6 @@ footer {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: small;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
