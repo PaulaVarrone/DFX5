@@ -1,68 +1,67 @@
 .home {
-    padding: 15rem;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3rem;
-    font-weight: normal;
-    font-style: italic;
-    text-align: center;
-    text-decoration: none;
-    background-image: url("../Img/home.jpg");
-    background-repeat: no-repeat;
-    background-color: $mainColor;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  background-image: url("../Img/home.jpg");
+  background-repeat: no-repeat;
+  background-color: $mainColor;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .about-us {
-    padding: 5rem;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    font-weight: normal;
-    font-style: italic;
-    text-align: center;
-    text-decoration: none;
-    background-image: url("../Img/about\ us.jpg");
-    background-repeat: no-repeat;
-    background-color: $mainColor;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+  padding: 5rem;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  background-image: url("../Img/about\ us.jpg");
+  background-repeat: no-repeat;
+  background-color: $mainColor;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .tarjetas {
-    border: 3px solid purple;
-    margin: 2rem;
-    display: flex;
-    gap: 1rem;
+  border: 3px solid purple;
+  margin: 2rem;
+  display: flex;
+  gap: 1rem;
 
-    .tarjeta {
-      flex: 1;
+  .tarjeta {
+    flex: 1;
 
-      .img {
-        width: 100%;
+    .img {
+      width: 100%;
     }
   }
 
   .personas {
     text-align: center;
-}
-  
+  }
+
 }
 
 .imagenes-personas {
-    transition: 1s;
+  transition: 1s;
 }
 
 .imagenes-personas:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .rotate-scale-up {
-	-webkit-animation: rotate-scale-up 0.65s linear both;
-	        animation: rotate-scale-up 0.65s linear both;
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
 }
 
 /* ----------------------------------------------
@@ -77,31 +76,36 @@
  * animation rotate-scale-up
  * ----------------------------------------
  */
- @-webkit-keyframes rotate-scale-up {
+@-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
+
   50% {
     -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
+
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
+
 @keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
+
   50% {
     -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
+
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }

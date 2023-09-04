@@ -190,6 +190,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 100%;
   grid-area: título;
 }
 
@@ -240,14 +241,6 @@
   text-align: center;
   text-decoration: none;
   grid-area: AI;
-}
-
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "título título" "clients1 cloud" "security AI";
-  }
 }
 
 .clients {
@@ -335,5 +328,63 @@ footer {
   font-weight: 400;
   font-size: small;
 }
+
+@mixin tablet {
+  @media screen and (max-widht: 1000px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .título {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    padding-top: 3rem;
+  }
+
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    padding-top: 3rem;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-widht:480px) {
+    .home {
+      padding-inline: 2rem;
+      padding-top: 3rem;
+      font-size: 2.5rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .título {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 2rem;
+    }
+  }
+}
+
 
 /*# sourceMappingURL=main.css.map */
